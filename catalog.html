@@ -2,251 +2,230 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Глейси каталог</title>
-  <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+	<meta charset="UTF-8">
+	<title>HTML Academy: Глейси каталог</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header_logo"><img src="http://placehold.it/150x50" alt=""></div>
-      <nav class="header_main_nav">
-        <ul class="main_nav_list">
-          <li class="nav_list_link">
-            <a href="catalog.html">Каталог</a></li>
-          <ul class="main_nav_innerlist">
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лёд</a></li>
-            <li><a href="#">Мелорин</a></li>
-          </ul>
-          <li class="nav_list_link">
-            <a href="#">Доставка и оплата</a></li>
-          <li class="nav_list_link">
-            <a href="#">О компании</a></li>
-        </ul>
-      </nav>
-      <div class="header_user">
-        <div class="user_search ">
-          <button class="user_wrap search_btn" type="button" name="button">Поиск</button>
-          <div class="search_wrap">
-            <label class="search_lbl">Что ищем?</label>
-            <input class="search_input input_main" type="search" placeholder="Что ищем?">
-          </div>
-        </div>
-        <div class="user_login">
-          <a href="#" class="user_wrap enter-btn">Вход</a>
-          <form action="#" method='post' class="login_form">
-            <input class="login_form_input input_main" type="email" name="mail" placeholder="Электронная почта">
-            <input class="login_form_input input_main" type="password" name="password" placeholder="Пароль">
-            <input class="login_form_btn btn" type="submit" name="name" value="Войти">
-            <a href="#" class="login_form_link">Забыли пароль</a>
-            <a href="#" class="login_form_link">Новая регистрация</a>
-          </form>
-        </div>
-        <div class="user_cart">
-          <a class="user_wrap cart_btn" href="#">Пусто</a>
-          <div class="cart_wrap">
-            <ul class="user_cart_list">
-              <li class="user_card_item">
-                <button type="button" name="close">Удалить</button>
-                <div class="item_img"><img src="http://placehold.it/50x50" alt=""></div>
-                <div class="item_title">Пломбир с апельсиновым джемом</div>
-                <div class="item_info">1,5кгх200р</div>
-                <div class="item_price">300руб.</div>
-              </li>
-              <li class="user_card_item">
-                <button type="button" name="close">Удалить</button>
-                <div class="item_img"><img src="http://placehold.it/50x50" alt=""></div>
-                <div class="item_title">Пломбир с апельсиновым джемом</div>
-                <div class="item_info">1,5кгх300р</div>
-                <div class="item_price">450руб.</div>
-              </li>
-            </ul>
-            <div class="user_card_total"> 750руб.</div>
-            <a href="#" class="user_cart_btn btn">Оформить заказ</a>
-          </div>
-        </div>
-        <div class="user_info">
-          С 10 до 20, ежедневно
-          <a class="user-info_link" href="tel: 88124502525">88124502525</a></div>
-      </div>
-    </div>
-  </header>
-  <main class="main-catalog">
-    <div class="container">
-      <ul class="breadcrumps">
-        <li class="breadcrump_item">
-          <a class="link breadcrump_link" href="index.html">Главная</a></li>
-        <li class="breadcrump_item">
-          <a class="link breadcrump_link" href="#">Каталог</a></li>
-        <li class="breadcrump_item">
-          <a class="link breadcrump_link" href="#">Сливочное</a></li>
-      </ul>
-      <h1 class="page_title">Сливочное мороженое</h1>
-      <form action="#" class="main_form">
-        <fieldset class="form_group">
-          <legend class="form_group_title">Сортирвка:</legend>
-          <select class="form_select" name="Sort">
-            <option value="popular">по популярности</option>
-            <option value="low_price">сначала недорогие</option>
-            <option value="hight_price">сначала дорогие</option>
-            <option value="fatness">по жирности</option>
-          </select>
-        </fieldset>
-        <fieldset class="form_group">
-          <legend class="form_group_title">Цена 100руб - 500руб.</legend>
-        </fieldset>
-        <fieldset class="form_group">
-          <legend class="form_group_title">Жирность:</legend>
-          <input id="type1" name="fatness" value="0%" type="radio" class="form_input">
-          <label for="type1" class="form_label">0%</label>
-          </input>
-          <input id="type2" name="fatness" value="until 10%" type="radio" class="form_input" checked="">
-          <label for="type2" class="form_label">до 10%</label>
-          </input>
-          <input id="type3" name="fatness" value="until 30%" type="radio" class="form_input">
-          <label for="type3" class="form_label"> до 30%</label>
-          </input>
-          <input id="type4" name="fatness" value="hight 30%" type="radio" class="form_input">
-          <label for="type4" class="form_label">выше 30%</label>
-          </input>
-        </fieldset>
-        <fieldset class="form_group">
-          <legend class="form_group_title">Наполнители:</legend>
-          <input id="check1" type="checkbox" class="form_input" checked="">
-          <label for="check1" class="form_label_check">шоколадные</label>
-          </input>
-          <input id="check2" type="checkbox" class="form_input" checked="">
-          <label for="check2" class="form_label_check">сахарные присыпки</label>
-          </input>
-          <input id="check3" type="checkbox" class="form_input">
-          <label for="check3" class="form_label_check">фрукты</label>
-          </input>
-          <input id="check4" type="checkbox" class="form_input">
-          <label for="check4" class="form_label_check">сиропы</label>
-          </input>
-          <input id="check5" type="checkbox" class="form_input">
-          <label for="check5" class="form_label_check">джемы</label>
-          </input>
-        </fieldset>
-        <button class="form_btn" type="submit" name="button_submit">Применить</button>
-      </form>
-      <div class="catalog">
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price">310 р/кг</div>
-          <p class="item_description">Сливочное с апельсиновым джемом и цитрусовой стружкой </p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price">380 р/кг</div>
-          <p class="item_description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price"> 355 р/кг</div>
-          <p class="item_description">Сливочно-кофейное с кусочками шоколада</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price"> 415 р/кг</div>
-          <p class="item_description">Сливочное крем-брюле с карамельной подливкой</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price"> 325 р/кг</div>
-          <p class="item_description">Сливочное с брусничным джемом </p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price"> 410 р/кг</div>
-          <p class="item_description">Сливочно-черничное с цельными ягодами черники </p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price"> 375 р/кг</div>
-          <p class="item_description">Сливочно-лимонное с карамельной присыпкой</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price"> 320 р/кг</div>
-          <p class="item_description">Сливочное с шоколадной стружкой</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price">440 р/кг</div>
-          <p class="item_description">Сливочно-ванильное с кусочками шоколада </p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price">435 р/кг</div>
-          <p class="item_description">Сливочноe с ментоловым сиропом</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price">355 р/кг</div>
-          <p class="item_description">Сливочное с кусочками черного шоколада</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_item">
-          <img src="http://placehold.it/150x150" alt="" class="item_img">
-          <div class="item_price"> 420 р/кг</div>
-          <p class="item_description">Сливочное с мятным сиропом</p>
-          <a href="#" class="item_btn btn">Быстрый просмотр!</a>
-        </div>
-        <div class="catalog_paginator">
-          <div class="paginator_wrap">
-            <a href="#" class="paginator_link paginator_link_prev paginator_link__disabled">Предыдущая</a>
-            <a href="#" class="paginator_link">1</a>
-            <a href="#" class="paginator_link">2</a>
-            <a href="#" class="paginator_link">3</a>
-            <a href="#" class="paginator_link">4</a>
-            <a href="#" class="paginator_link">5</a>
-            <a href="#" class="paginator_link paginator_link_next">Следующая</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer_social">
-        <a class="social_link social-tw" href="#">Твиттер</a>
-        <a class="social_link social-inst" href="#">Инстаграм</a>
-        <a class="social_link social-fb" href="#">Фейсбук</a>
-        <a class="social_link social-vk" href="#">Вконтакте</a>
-      </div>
-      <div class="footer_about">
-        <div class="about_wrapper_left">
-          <a href="#" class="link about_link about_link__active">Для поставщиков</a>
-          <a href="#" class="link about_link">О производстве</a>
-        </div>
-        <div class="about_wrapper_right">
-          <a href="#" class="link about_link">Наши документы</a>
-          <a href="#" class="link about_link">Экологические стандарты</a>
-        </div>
-      </div>
-      <div class="footer_copyright">
-        <img src="http://placehold.it/100x50" alt="">
-        <p class="copyrigh_text">
-          Сделано в <a href="#" class="text_link">HTML Academy</a> © 2016
-        </p>
-      </div>
-    </div>
-  </footer>
+	<header class="header">
+		<div class="container">
+			<div class="header_logo">
+				<a href="index.html">
+					<img src="img/svg-img/logo.svg" alt="Logo-Gllacy">
+				</a>
+			</div>
+			<nav class="header_main_nav">
+				<ul class="main_nav_list">
+					<li class="nav_list_link"><a href="catalog.html">Каталог</a></li>
+					<ul class="main_nav_innerlist">
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">Сливочное</a></li>
+						<li><a href="#">Щербеты</a></li>
+						<li><a href="#">Фруктовый лёд</a></li>
+						<li><a href="#">Мелорин</a></li>
+					</ul>
+					<li class="nav_list_link"><a href="#">Доставка и оплата</a></li>
+					<li class="nav_list_link"><a href="#">О компании</a></li>
+				</ul>
+			</nav>
+			<div class="header_user">
+				<div class="user_search">
+					<button type="button" name="button" class="user_wrap search_btn">Поиск</button>
+					<div class="search_wrap">
+						<label class="search_lbl">Что ищем?</label>
+						<input type="search" placeholder="Что ищем?" class="search_input input_main">
+					</div>
+				</div>
+				<div class="user_login"><a href="#" class="user_wrap enter-btn">Вход</a>
+					<form action="#" method="post" class="login_form">
+						<input type="email" name="mail" placeholder="Электронная почта" class="login_form_input input_main">
+						<input type="password" name="password" placeholder="Пароль" class="login_form_input input_main">
+						<input type="submit" name="name" value="Войти" class="login_form_btn btn"><a href="#" class="login_form_link">Забыли пароль</a><a href="#" class="login_form_link">Новая регистрация</a>
+					</form>
+				</div>
+				<div class="user_cart"><a href="#" class="user_wrap cart_btn">Пусто</a>
+					<div class="cart_wrap">
+						<ul class="user_cart_list">
+							<li class="user_card_item">
+								<button type="button" name="close">Удалить</button>
+								<div class="item_img_wrap">
+									<img src="img/item-1.png" alt="" class="item_img">
+								</div>
+								<div class="item_title">Пломбир с апельсиновым джемом</div>
+								<div class="item_info">1,5кгх200р</div>
+								<div class="item_price">300руб.</div>
+							</li>
+							<li class="user_card_item">
+								<button type="button" name="close">Удалить</button>
+								<div class="item_img_wrap">
+									<img src="img/item-3.png" alt="" class="item_img">
+								</div>
+								<div class="item_title">Пломбир с апельсиновым джемом</div>
+								<div class="item_info">1,5кгх300р</div>
+								<div class="item_price">450руб.</div>
+							</li>
+						</ul>
+						<div class="user_card_total"> 750руб.</div><a href="#" class="user_cart_btn btn">Оформить заказ</a>
+					</div>
+				</div>
+				<div class="user_info">С 10 до 20, ежедневно<a href="tel: 88124502525" class="user-info_link">88124502525</a></div>
+			</div>
+		</div>
+	</header>
+	<main class="main-catalog">
+		<div class="container">
+			<ul class="breadcrumps">
+				<li class="breadcrump_item"><a href="index.html" class="link breadcrump_link">Главная</a></li>
+				<li class="breadcrump_item"><a href="#" class="link breadcrump_link">Каталог</a></li>
+				<li class="breadcrump_item"><a href="#" class="link breadcrump_link">Сливочное</a></li>
+			</ul>
+			<h1 class="page_title">Сливочное мороженое</h1>
+			<form action="#" class="main_form">
+				<fieldset class="form_group">
+					<legend class="form_group_title">Сортирвка:</legend>
+					<select name="Sort" class="form_select">
+						<option value="popular">по популярности</option>
+						<option value="low_price">сначала недорогие</option>
+						<option value="hight_price">сначала дорогие</option>
+						<option value="fatness">по жирности</option>
+					</select>
+				</fieldset>
+				<fieldset class="form_group">
+					<legend class="form_group_title">Цена 100руб - 500руб.</legend>
+				</fieldset>
+				<fieldset class="form_group">
+					<legend class="form_group_title">Жирность:</legend>
+					<input id="type1" name="fatness" value="0%" type="radio" class="form_input">
+					<label for="type1" class="form_label">0%</label>
+					<input id="type2" name="fatness" value="until 10%" type="radio" checked="" class="form_input">
+					<label for="type2" class="form_label">до 10%</label>
+					<input id="type3" name="fatness" value="until 30%" type="radio" class="form_input">
+					<label for="type3" class="form_label"> до 30%</label>
+					<input id="type4" name="fatness" value="hight 30%" type="radio" class="form_input">
+					<label for="type4" class="form_label">выше 30%</label>
+				</fieldset>
+				<fieldset class="form_group">
+					<legend class="form_group_title">Наполнители:</legend>
+					<input id="check1" type="checkbox" checked="" class="form_input">
+					<label for="check1" class="form_label_check">шоколадные</label>
+					<input id="check2" type="checkbox" checked="" class="form_input">
+					<label for="check2" class="form_label_check">сахарные присыпки</label>
+					<input id="check3" type="checkbox" class="form_input">
+					<label for="check3" class="form_label_check">фрукты</label>
+					<input id="check4" type="checkbox" class="form_input">
+					<label for="check4" class="form_label_check">сиропы</label>
+					<input id="check5" type="checkbox" class="form_input">
+					<label for="check5" class="form_label_check">джемы</label>
+				</fieldset>
+				<button type="submit" name="button_submit" class="form_btn">Применить</button>
+			</form>
+			<div class="catalog">
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-1.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price">310 р/кг</div>
+					<p class="item_description">Сливочное с апельсиновым джемом и цитрусовой стружкой </p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-2.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price">380 р/кг</div>
+					<p class="item_description">Сливочно-клубничное с присыпкой из белого шоколада</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-3.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price"> 355 р/кг</div>
+					<p class="item_description">Сливочно-кофейное с кусочками шоколада</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-4.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price"> 415 р/кг</div>
+					<p class="item_description">Сливочное крем-брюле с карамельной подливкой</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-5.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price"> 325 р/кг</div>
+					<p class="item_description">Сливочное с брусничным джемом </p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-6.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price"> 410 р/кг</div>
+					<p class="item_description">Сливочно-черничное с цельными ягодами черники </p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-7.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price"> 375 р/кг</div>
+					<p class="item_description">Сливочно-лимонное с карамельной присыпкой</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-8.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price"> 320 р/кг</div>
+					<p class="item_description">Сливочное с шоколадной стружкой</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-9.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price">440 р/кг</div>
+					<p class="item_description">Сливочно-ванильное с кусочками шоколада </p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-10.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price">435 р/кг</div>
+					<p class="item_description">Сливочноe с ментоловым сиропом</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-11.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price">355 р/кг</div>
+					<p class="item_description">Сливочное с кусочками черного шоколада</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_item">
+					<div class="item_img_wrap">
+						<img src="img/item-12.png" alt="" class="item_img" width="267" height="267" >
+					</div>
+					<div class="item_price"> 420 р/кг</div>
+					<p class="item_description">Сливочное с мятным сиропом</p><a href="#" class="item_btn btn">Быстрый просмотр!</a>
+				</div>
+				<div class="catalog_paginator">
+					<div class="paginator_wrap"><a href="#" class="paginator_link paginator_link_prev paginator_link__disabled">Предыдущая</a><a href="#" class="paginator_link">1</a><a href="#" class="paginator_link">2</a><a href="#" class="paginator_link">3</a><a href="#" class="paginator_link">4</a>
+						<a
+										href="#" class="paginator_link">5</a><a href="#" class="paginator_link paginator_link_next">Следующая</a></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_social"><a href="#" class="social_link social-tw">Твиттер</a><a href="#" class="social_link social-inst">Инстаграм</a><a href="#" class="social_link social-fb">Фейсбук</a><a href="#" class="social_link social-vk">Вконтакте</a></div>
+			<div class="footer_about">
+				<div class="about_wrapper_left"><a href="#" class="link about_link about_link__active">Для поставщиков</a><a href="#" class="link about_link">О производстве</a></div>
+				<div class="about_wrapper_right"><a href="#" class="link about_link">Наши документы</a><a href="#" class="link about_link">Экологические стандарты</a></div>
+			</div>
+			<div class="footer_copyright"><img src="img/svg-img/logo-ha.svg" alt="">
+				<p class="copyrigh_text">Сделано в <a href="#" class="text_link">HTML Academy</a> © 2016</p>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
