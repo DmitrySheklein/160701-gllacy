@@ -7,6 +7,7 @@
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +16,22 @@
 			<div class="header_logo"><img src="img/svg-img/logo.svg" alt="Logo-Gllacy"></div>
 			<nav class="header_main_nav">
 				<ul class="main_nav_list">
-					<li class="nav_list_link nav_link__dd">
-						<a href="catalog.html">Каталог</a>
+					<li class="nav_list_item nav_link__dd">
+						<a class="nav_list_link" href="#">Каталог</a>
 						<ul class="main_nav_innerlist">
-							<li><a href="#">Новинки</a></li>
-							<li><a href="#">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лёд</a></li>
-							<li><a href="#">Мелорин              </a></li>
+							<li><a class="innerlist_link innerList_link--marked" href="#">Новинки</a></li>
+							<li><a class="innerlist_link" href="catalog.html">Сливочное</a></li>
+							<li><a class="innerlist_link" href="#">Щербеты</a></li>
+							<li><a class="innerlist_link" href="#">Фруктовый лёд</a></li>
+							<li><a class="innerlist_link" href="#">Мелорин</a></li>
 						</ul>
 					</li>
-					<li class="nav_list_link"><a href="#">Доставка и оплата</a></li>
-					<li class="nav_list_link"><a href="#">О компании            </a></li>
+					<li class="nav_list_item">
+						<a class="nav_list_link" href="#">Доставка и оплата</a>
+					</li>
+					<li class="nav_list_item">
+						<a class="nav_list_link" href="#">О компании</a>
+					</li>
 				</ul>
 			</nav>
 			<div class="header_user">
@@ -34,7 +39,7 @@
 					<button type="button" name="button" class="user_wrap search_btn">Поиск</button>
 					<div class="search_wrap">
 						<label class="search_lbl">Что ищем?</label>
-						<input type="search" placeholder="Что ищем?" class="search_input input_main">
+						<input class="search_input input_main" type="search" placeholder="Что ищем?">
 					</div>
 				</div>
 				<div class="user_login">
@@ -43,7 +48,7 @@
 						<input type="email" name="mail" placeholder="Электронная почта" class="login_form_input input_main">
 						<input type="password" name="password" placeholder="Пароль" class="login_form_input input_main">
 						<input type="submit" name="name" value="Войти" class="login_form_btn btn">
-						<a href="#" class="login_form_link">Забыли пароль</a>
+						<a href="#" class="login_form_link">Забыли пароль?</a>
 						<a href="#" class="login_form_link">Новая регистрация</a>
 					</form>
 				</div>
@@ -57,7 +62,7 @@
 									<img src="img/item-1.png" alt="" class="item_img">
 								</div>
 								<div class="item_title">Пломбир с апельсиновым джемом</div>
-								<div class="item_info">1,5кгх200р</div>
+								<div class="item_info">1,5кг <span>х200р</span></div>
 								<div class="item_price">300руб.</div>
 							</li>
 							<li class="user_card_item">
@@ -65,32 +70,34 @@
 								<div class="item_img_wrap">
 									<img src="img/item-3.png" alt="" class="item_img">
 								</div>
-								<div class="item_title">Пломбир с апельсиновым джемом</div>
-								<div class="item_info">1,5кгх300р</div>
+								<div class="item_title">Клубничный пломбир с присыпкой из белого шоколада</div>
+								<div class="item_info">1,5кг<span>х300р</span></div>
 								<div class="item_price">450руб.</div>
 							</li>
 						</ul>
-						<div class="user_card_total"> 750руб.</div>
+						<div class="user_card_total">Итого: <span>750руб.</span> </div>
 						<a href="#" class="user_cart_btn btn">Оформить заказ</a>
 					</div>
 				</div>
-				<div class="user_info">С 10 до 20, ежедневно<a class="user_info_link" href="tel: 88124502525">8 812 450-25-25</a></div>
+				<div class="user_info">С 10 до 20, ежедневно
+					<a class="user_info_link" href="tel: 88124502525">8 812 450-25-25</a></div>
 			</div>
 		</div>
 	</header>
 	<div class="main_slider">
 		<div class="container">
 			<ul class="slider">
-				<li class="slider_item">
-					<img src="img/slide-1.png" alt="slide-1" width="1045" height="881" />
-					<h2 class="slide_title">Крем-брюле и пломбир с малиновым джемом</h2><a href="#" class="btn slide_btn">Давайте оба!</a>
+				<li class="slider_item slide-1">
+					<img src="img/slide-1.png" alt="slide-1" />
+					<h2 class="slide_title">Крем-брюле и пломбир с малиновым джемом</h2>
+					<a href="#" class="btn slide_btn">Давайте оба!</a>
 				</li>
-				<li class="slider_item">
-					<img src="img/slide-2.png" alt="slide-2" width="1046" height="845">
+				<li class="slider_item slide-2">
+					<img src="img/slide-2.png" alt="slide-2">
 					<h2 class="slide_title">Шоколадный пломбир и лимонный сорбет</h2><a href="#" class="btn slide_btn">Давайте оба!</a>
 				</li>
-				<li class="slider_item">
-					<img src="img/slide-3.png" alt="slide-3" width="1046" height="838">
+				<li class="slider_item slide-3">
+					<img src="img/slide-3.png" alt="slide-3">
 					<h2 class="slide_title">Пломбир с помадкой и клубничный щербет</h2><a href="#" class="btn slide_btn">Давайте оба!</a>
 				</li>
 			</ul>
@@ -113,29 +120,40 @@
 					<div class="item_img_wrap">
 						<img src="img/item-1.png" alt="" class="item_img" width="267" height="267">
 					</div>
-					<div class="item_price">310 р/кг</div>
-					<p class="item_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p><a href="#" class="item_btn btn">Быстрый просмотр</a>
+					<div class="item_price">
+						<span class="item_price_value">310 <span class="item_price_icon"></span></span>
+
+						/кг
+					</div>
+					<a class="item_description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><a href="#" class="item_btn btn">Быстрый просмотр</a>
 				</div>
 				<div class="hits_item">
 					<div class="item_img_wrap">
 						<img src="img/item-2.png" alt="" class="item_img" width="267" height="267">
 					</div>
-					<div class="item_price">380 р/кг</div>
-					<p class="item_description">Сливочно-кофейное с кусочками шоколада</p><a href="#" class="item_btn btn">Быстрый просмотр</a>
+					<div class="item_price"><span class="item_price_value">380 <span class="item_price_icon"></span></span>
+
+					/кг</div>
+					<a class="item_description" href="#">Сливочно-кофейное с кусочками шоколада</a><a href="#" class="item_btn btn">Быстрый просмотр</a>
 				</div>
 				<div class="hits_item">
 					<div class="item_img_wrap">
 						<img src="img/item-3.png" alt="" class="item_img" width="267" height="267">
 					</div>
-					<div class="item_price">355 р/кг</div>
-					<p class="item_description">Сливочно-клубничное с присыпкой из белого шоколада</p><a href="#" class="item_btn btn">Быстрый просмотр</a>
+					<div class="item_price"><span class="item_price_value">355 <span class="item_price_icon"></span></span>
+
+					/кг</div>
+					<a class="item_description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a><a href="#" class="item_btn btn">Быстрый просмотр</a>
 				</div>
 				<div class="hits_item">
 					<div class="item_img_wrap">
 						<img src="img/item-4.png" alt="" class="item_img" width="267" height="267">
 					</div>
-					<div class="item_price">415 р/кг</div>
-					<p class="item_description">Сливочное крем-брюле с карамельной подливкой</p><a href="#" class="item_btn btn">Быстрый просмотр</a>
+					<div class="item_price"><span class="item_price_value">415 <span class="item_price_icon"></span></span>
+
+					/кг</div>
+					<a class="item_description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+					<a href="#" class="item_btn btn">Быстрый просмотр</a>
 				</div>
 
 			</div>
@@ -148,7 +166,8 @@
 						<img class="about_item_img" src="img/svg-img/листик.svg" alt="листик"> Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
 					<li class="about_item">
 						<img class="about_item_img" src="img/svg-img/корова.svg" alt="корова"> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого
-						сырья.</li>
+						сырья.
+					</li>
 					<li class="about_item">
 						<img class="about_item_img" src="img/svg-img/градусник.svg" alt="градусник"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный
 						вкус.
@@ -157,12 +176,15 @@
 			</div>
 			<div class="info">
 				<div class="info_blog">
-					<p class="blog_text">Новое в нашем блоге</p><a href="#" class="blog_link">10 способов сервировки фруктовых щербетов к столу</a>
+					<p class="info_blog_text">Новое в нашем блоге</p>
+					<a href="#" class="info_blog_link">10 способов сервировки <br> фруктовых щербетов <br> к столу</a>
 				</div>
 				<div class="info_subscribe">
-					<p class="subscribe_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-					<input type="email" name="email_subscr" placeholder="Электронная почта" class="subscribe_input input_main">
-					<button type="submit" name="button" class="subscribe_bnt bnt">Отправить</button>
+					<div class="info_subscribe_wrap">
+						<p class="subscribe_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+						<input type="email" class="subscribe_input input_main" name="email_subscr" placeholder="Электронная почта">
+						<button type="submit" name="button" class="subscribe_bnt btn">Отправить</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -170,9 +192,13 @@
 	<div class="map">
 		<!-- <div class="map_img"><img src="img/map.jpg" alt="map"></div> -->
 		<div class="map_contacts">
-			<p class="map_adress">Адрес главного офиса и офлайн магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+			<p class="map_adress">
+				Адрес главного офиса и офлайн магазина:
+				<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+			</p>
 			<p class="contacts_phone">Для заказов по телефону:
-				<a class="contacts_tel_link"href="tel: 88124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
+				<a class="contacts_tel_link" href="tel: 88124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)
+			</p>
 			<a href="#" class="contacts_btn btn">Форма обратной связи</a>
 		</div>
 	</div>
@@ -185,7 +211,7 @@
 				<a href="#" class="social_link social-vk">Вконтакте</a></div>
 			<div class="footer_about">
 				<div class="about_wrapper_left">
-					<a href="#" class="link about_link about_link__active"><img src="img/svg-img/heart-icon.svg" alt="" /> Для поставщиков</a>
+					<a href="#" class="link about_link about_link--marked"><img class='icon-heart' src="img/svg-img/heart-icon.svg" alt="heart"/> Для поставщиков</a>
 					<a href="#" class="link about_link">О производстве</a></div>
 				<div class="about_wrapper_right">
 					<a href="#" class="link about_link">Наши документы</a>
@@ -194,8 +220,7 @@
 			</div>
 			<div class="footer_copyright"><img src="img/svg-img/logo-ha.svg" alt="">
 				<p class="copyrigh_text">Сделано в
-					<a href="#" class="text_link">HTML Academy</a>
-					 © 2016</p>
+					<a href="#" class="text_link">HTML Academy</a> © 2016</p>
 			</div>
 		</div>
 	</footer>
@@ -218,7 +243,7 @@
 		$(document).ready(function() {
 			$('.slider').bxSlider({
 				mode: 'fade',
-  			captions: true
+				captions: true
 			});
 
 		});
