@@ -538,13 +538,15 @@ body {
     border-radius: 10px; }
   .map_adress {
     margin: 0;
+    margin-bottom: 16px;
     font: normal 14px/20px 'Roboto','Arial',sans-serif;
     color: #343434; }
     .map_adress span {
       display: block;
       font: bold 18px/24px 'Roboto','Arial',sans-serif; }
-  .map_phone {
+  .map .contacts_phone {
     margin: 0;
+    margin-bottom: 25px;
     font: normal 14px/20px 'Roboto','Arial',sans-serif;
     color: #343434; }
   .map .contacts_tel_link {
